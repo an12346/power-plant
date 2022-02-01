@@ -47,6 +47,48 @@ $(document).ready(function() {
       const newState = stateControl(powerDown);
       $('#power-value').text(`Power: ${newState.superpower}`);
     });
+
+    //plant 2
+
+    $('#feed1').click(function() {
+      const newState = stateControl2(feed);
+      $('#soil-value1').text(`Soil: ${newState.soil}`);
+    });
+
+    $('#blueFood1').click(function() {
+      const newState = stateControl2(blueFood);
+      $('#soil-value1').text(`Soil: ${newState.soil}`);
+    });
+
+    $('#hydrate1').click(function() {
+      const newState = stateControl2(hydrate);
+      $('#water-value1').text(`Water: ${newState.water}`);
+    });
+    
+    $('#superWater1').click(function() {
+      const newState = stateControl2(superWater);
+      $('#water-value1').text(`Water: ${newState.water}`);
+    });
+  
+    $('#sunLight1').click(function() {
+      const newState = stateControl2(sunLight);
+      $('#light-value1').text(`Light: ${newState.light}`);
+    });
+
+    $('#noLight1').click(function() {
+      const newState = stateControl2(noLight);
+      $('#light-value1').text(`Light: ${newState.light}`);
+    });
+
+    $('#powerUp1').click(function() {
+      const newState = stateControl2(powerUp);
+      $('#power-value1').text(`Power: ${newState.superpower}`);
+    });
+
+    $('#powerDown1').click(function() {
+      const newState = stateControl2(powerDown);
+      $('#power-value1').text(`Power: ${newState.superpower}`);
+    });
   
   // This function doesn't actually do anything useful in this application - it just demonstrates how we can "look" at the current state (which the DOM is holding anyway). However, students often do need the ability to see the current state without changing it so it's included here for reference.
   
